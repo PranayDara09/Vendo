@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { FiHome, FiSearch, FiUser } from 'react-icons/fi';
-import './Home.css';
+import './home.css';
 
 function Home(props) {
   const location = useLocation();
