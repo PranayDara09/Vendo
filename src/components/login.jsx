@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Login.css';
+import './login.css';
 
 function Login() {
   const vendorDemo = { email: 'vendor@demo.com', password: '12345678' };
