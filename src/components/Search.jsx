@@ -1,6 +1,6 @@
 import { FiHome, FiSearch, FiUser } from 'react-icons/fi';
 import { useNavigate, useLocation } from 'react-router-dom';
-import './Home.css';
+import './home.css';
 
 function Search() {
   const navigate = useNavigate();
