@@ -1,0 +1,360 @@
+.feed-bg {
+  min-height: 100vh;
+  background: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.feed-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 24px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(31,38,135,0.08);
+  padding: 18px 12px;
+}
+
+.feed-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #222;
+  text-align: center;
+}
+
+.feed-post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.feed-post-form textarea {
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  font-size: 15px;
+  resize: none;
+}
+
+.feed-post-form button {
+  align-self: flex-end;
+  background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.feed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.feed-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.feed-logo img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.feed-logo-enhanced {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: linear-gradient(90deg, #e3f0ff 0%, #f8faff 100%);
+  padding: 10px 18px;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,123,255,0.08);
+}
+
+.feed-logo-enhanced img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+  box-shadow: 0 4px 16px rgba(0,123,255,0.10);
+  background: #fff;
+}
+
+.feed-logo-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #007bff;
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.feed-post {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  margin-bottom: 12px;
+  position: relative;
+  border: 1px solid #e6ecf0;
+}
+
+.feed-post img {
+  display: block;
+  margin: 0 auto 8px auto;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.feed-post-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.feed-post-header strong {
+  color: #007bff;
+  font-size: 1rem;
+}
+
+.feed-post-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 4px 0 6px 0;
+  color: #222;
+}
+
+.feed-post-content {
+  font-size: 1.05rem;
+  color: #222;
+  margin-bottom: 10px;
+  word-break: break-word;
+}
+
+.feed-vote-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 2px;
+}
+
+.feed-vote-btn {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.2s;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.feed-vote-btn.up:hover {
+  color: #28a745;
+  background: #eafbe7;
+}
+
+.feed-vote-btn.down:hover {
+  color: #dc3545;
+  background: #fdeaea;
+}
+
+.feed-vote-count {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+  min-width: 24px;
+  text-align: center;
+}
+
+.feed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.feed-profile {
+  position: relative;
+}
+
+.profile-btn {
+  background: #f0f4fa;
+  border: none;
+  border-radius: 50%;
+  padding: 8px 12px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  transition: background 0.2s;
+}
+
+.profile-btn:hover {
+  background: #e0e7ef;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  padding: 8px 0;
+  z-index: 10;
+  min-width: 100px;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-weight: 600;
+  padding: 8px 16px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.logout-btn:hover {
+  background: #f0f4fa;
+}
+
+.create-post-btn {
+  position: fixed;
+  bottom: 80px; /* Place above the bottom navbar */
+  right: 24px;
+  background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  font-size: 2rem;
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(31,38,135,0.15);
+  cursor: pointer;
+  z-index: 201;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feed-post-category {
+  font-size: 0.95rem;
+  color: #007bff;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 500px) {
+  .feed-container {
+    max-width: 100%;
+    padding: 10px 2px;
+    border-radius: 10px;
+  }
+  .feed-logo img {
+    width: 44px;
+    height: 44px;
+  }
+  .feed-title {
+    font-size: 1.1rem;
+  }
+  .feed-post {
+    padding: 10px 8px;
+    border-radius: 8px;
+  }
+  .create-post-btn {
+    width: 48px;
+    height: 48px;
+    font-size: 1.7rem;
+    bottom: 70px;
+    right: 16px;
+  }
+}
+
+/* Modal styles */
+.post-modal-bg {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 101;
+}
+
+.post-modal {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(31,38,135,0.18);
+  padding: 24px 18px;
+  max-width: 340px;
+  width: 90vw;
+}
+
+.bottom-navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 62px;
+  background: #fff;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 200;
+  box-shadow: 0 -2px 12px rgba(0,123,255,0.06);
+}
+
+.navbar-btn {
+  background: none;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
+  color: #888;
+  cursor: pointer;
+  flex: 1;
+  padding: 0;
+  height: 100%;
+  transition: color 0.2s;
+}
+
+.navbar-btn-active,
+.navbar-btn:active {
+  color: #007bff;
+}
+
+.navbar-label {
+  font-size: 0.85rem;
+  margin-top: 2px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 500px) {
+  .bottom-navbar {
+    height: 54px;
+    font-size: 1.3rem;
+  }
+  .navbar-label {
+    font-size: 0.8rem;
+  }
+}

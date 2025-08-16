@@ -1,0 +1,103 @@
+.login-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.login-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+  max-width: 350px;
+  width: 100%;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-logo {
+  margin-bottom: 18px;
+}
+
+.login-logo img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.login-title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #222;
+}
+
+.login-role {
+  margin-bottom: 18px;
+  display: flex;
+  gap: 16px;
+}
+
+.login-role label {
+  font-weight: 500;
+  color: #555;
+  cursor: pointer;
+}
+
+.login-role input[type="radio"] {
+  accent-color: #007bff;
+  margin-right: 6px;
+}
+
+.login-field {
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.login-field label {
+  font-size: 14px;
+  color: #444;
+  font-weight: 500;
+}
+
+.login-field input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.2s;
+  box-sizing: border-box;
+}
+
+.login-field input:focus {
+  border: 1.5px solid #007bff;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px 0;
+  background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,123,255,0.08);
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 20px;
+}
+
+.login-demo {
+  margin-top: 18px;
+  font-size: 13px;
+  color: #888;
+  text-align: center;
+}
