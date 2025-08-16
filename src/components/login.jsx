@@ -31,7 +31,7 @@ function Login() {
     <div className="login-bg">
       <form className="login-card" onSubmit={handleSubmit}>
         <div className="login-logo">
-          <img src="/vendologo.png" alt="Logo" />
+          <img src="public/vendologo.png" alt="Logo" />
         </div>
         <h2 className="login-title">Sign in to Vendo</h2>
         <div className="login-role">

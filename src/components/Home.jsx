@@ -92,7 +92,7 @@ function Home(props) {
       <div className="feed-container">
         <div className="feed-header">
           <div className="feed-logo-enhanced">
-            <img src="/vendologo.png" alt="Logo" />
+            <img src="public/vendologo.png" alt="Logo" />
             <span className="feed-logo-title">Vendo</span>
           </div>
           <div className="feed-profile">
