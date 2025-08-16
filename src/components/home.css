@@ -259,6 +259,18 @@
   margin-bottom: 4px;
 }
 
+.search-input {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  font-size: 1rem;
+  margin-bottom: 18px;
+  background: #f8faff;
+}
+
 @media (max-width: 500px) {
   .feed-container {
     max-width: 100%;
@@ -356,5 +368,18 @@
   }
   .navbar-label {
     font-size: 0.8rem;
+  }
+}
+
+/* React Icons */
+.react-icons {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .react-icons {
+    display: block;
+    font-size: 1.5rem;
+    color: #007bff;
   }
 }

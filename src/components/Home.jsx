@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { FiHome, FiSearch, FiUser } from 'react-icons/fi';
+import { FiHome, FiSearch, FiUser, FiLogOut } from 'react-icons/fi';
 import './home.css';
 
 function Home(props) {
@@ -92,16 +92,16 @@ function Home(props) {
       <div className="feed-container">
         <div className="feed-header">
           <div className="feed-logo-enhanced">
-            <img src="src/assets/vendologo.png" alt="Logo" />
+            <img src="/vendologo.png" alt="Logo" />
             <span className="feed-logo-title">Vendo</span>
           </div>
           <div className="feed-profile">
             <button
               className="profile-btn"
               onClick={() => setProfileOpen(!profileOpen)}
-              aria-label="Profile"
+              aria-label="Logout"
             >
-              <span role="img" aria-label="profile">👤</span>
+              <FiLogOut size={22} />
             </button>
             {profileOpen && (
               <div className="profile-dropdown">
